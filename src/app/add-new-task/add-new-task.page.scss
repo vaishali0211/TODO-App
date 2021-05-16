@@ -1,0 +1,31 @@
+.main{
+    --background: #433465;
+   }
+   .text{
+       text-align: center;
+   }
+   .center-card {
+    margin: auto;
+    --background: #ffffff; //url('../../assets/loginbg.png') no-repeat;
+    background-size: contain;
+    background-position: 90% center;
+    --color:black;
+    width: 80vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    right: 0;
+    left: 0;
+    border-radius: 12px;
+    ion-card-title,
+    ion-item {
+        --background: transparent;
+        --color:black;
+    }
+}
+.back{
+    --color:black;
+}

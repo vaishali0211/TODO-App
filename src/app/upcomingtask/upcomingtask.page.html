@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+   
+    <ion-title class="text">Upcoming Task</ion-title>
+    <ion-icon name="close" slot="end" size="larger" class="ion-padding" (click)="dismis()"></ion-icon>
+
+    <ion-buttons class="back" slot="start">
+      <ion-back-button [icon]="buttonIcon"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content  padding class="main">
+  <ion-card class="ion-align-self-center" *ngFor="let show of upcomingTask" >
+    <ion-item>
+      {{show.task}}
+      <!-- <ion-textarea [(ngModel)]="itemName"  placeholder="Write task here"></ion-textarea> -->
+   </ion-item>
+   <ion-item>
+     <ion-icon name="calendar-outline"slot="start"></ion-icon>
+     <ion-label >Due Date </ion-label>
+     <ion-datetime [(ngModel)]="itemDueDate"  displayFormat="D MMM YYYY H:mm"></ion-datetime>
+     {{show.date}}
+   </ion-item>
+ 
+  </ion-card>
+</ion-content>
